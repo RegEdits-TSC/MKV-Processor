@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
     A PowerShell script for processing MKV files using MKVToolNix (mkvmerge).
     The script renames video and audio tracks, modifies track languages, and manages subtitle tracks based on user input.
@@ -495,17 +495,17 @@ foreach ($file in $mkvFiles) {
             Write-Host ""
 
             # Use a simple prompt for the user's choice
-            $file_choices = New-Object Collections.ObjectModel.Collection[Management.Automation.Host.ChoiceDescription]
-            $file_choices.Add((New-Object Management.Automation.Host.ChoiceDescription -ArgumentList '&Overwrite', 'Choose this option to overwrite the existing file.'))
-            $file_choices.Add((New-Object Management.Automation.Host.ChoiceDescription -ArgumentList '&Skip', 'Choose this option to skip processing the file.'))
-            $file_choices.Add((New-Object Management.Automation.Host.ChoiceDescription -ArgumentList '&Modify', 'Choose this option to modify the filename, enabling coexistence with existing files.'))
+            $fileChoices = New-Object Collections.ObjectModel.Collection[Management.Automation.Host.ChoiceDescription]
+            $fileChoices.Add((New-Object Management.Automation.Host.ChoiceDescription -ArgumentList '&Overwrite', 'Choose this option to overwrite the existing file.'))
+            $fileChoices.Add((New-Object Management.Automation.Host.ChoiceDescription -ArgumentList '&Skip', 'Choose this option to skip processing the file.'))
+            $fileChoices.Add((New-Object Management.Automation.Host.ChoiceDescription -ArgumentList '&Modify', 'Choose this option to modify the filename, enabling coexistence with existing files.'))
 
             # Prompt user for choice without displaying choices again
-            $file_decision = $Host.UI.PromptForChoice('', '', $file_choices, 2)  # Empty strings for title and question in PromptForChoice
+            $fileDecision = $Host.UI.PromptForChoice('', '', $fileChoices, 2)  # Empty strings for title and question in PromptForChoice
 
             Write-Host ""
 
-            switch ($file_decision) {
+            switch ($fileDecision) {
                 0 {
                     Write-Host "The file will be overwritten." -ForegroundColor Yellow
                     Write-Host ""
