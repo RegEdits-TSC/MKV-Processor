@@ -111,10 +111,14 @@ Contributions are welcome! Here's how you can contribute:
 
 1. Fork the repository.
 2. Create your feature branch (`git checkout -b feature/new-feature`).
-3. Commit your changes (`git commit -m 'Add new feature'`).
-4. Push to the branch (`git push origin feature/new-feature`).
-5. Open a pull request.
+4. Commit your changes (`git commit -m 'Add new feature'`).
+5. Push to the branch (`git push origin feature/new-feature`).
+6. Open a pull request.
 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+![RegEdits Torrenting](https://github.com/RegEdits-TSC/VT-Launch-Scripts/blob/main/RegEdits_Torrenting_Cover.png?raw=true)
+
+Copyright © 2024 - RegEdits Torrenting 
