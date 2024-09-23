@@ -12,6 +12,7 @@ This PowerShell script automates the processing of `.mkv` files using MKVToolNix
 - [Usage](#usage)
 - [Configuration](#configuration)
 - [Error Handling](#error-handling)
+- [Roadmap](#roadmap)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -92,6 +93,17 @@ The script includes error handling and validation to ensure smooth processing:
 - Ensures valid paths for input/output.
 - Validates user input for file titles, release groups, and track IDs.
 - Provides feedback when files are skipped or overwritten.
+
+## Roadmap
+
+- **v1.1.0**:
+  - Improve error handling with more detailed log outputs.
+  - Add support for more advanced track editing (e.g., track ordering).
+  - Provide customization options for metadata tags and other MKV properties.
+  
+- **Future**:
+  - Integration with external APIs for automatic metadata retrieval (e.g., movie databases).
+  - Apply and assign a title to each file based on its filename during the processing stage.
 
 ## Contributing
 
